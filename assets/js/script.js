@@ -40,7 +40,7 @@ function runGame(gameType){
         displayMultiplicationQuestion(num1, num2);
     } else if(gameType === "subtract") {
         displaySubtractionQuestion(num1, num2);
-    } else if(gameType === "divide") {
+    } else if(gameType === "division") {
         displayDivisionQuestion(num1, num2);
     } else{
         alert(`Unknown game type: ${gameType}`);
@@ -84,7 +84,7 @@ function calculateCorrectAnswer(){
     } else if(operator === "-") {
         return [operand1 - operand2, "subtract"];
     } else if(operator === "/") {
-        return [operand1 / operand2, "divide"];
+        return [operand1 / operand2, "division"];
     } else {
         alert(`Unimplemented operator ${operator}`);
         throw `Unimplemented operator ${operator}. Aborting!`;
